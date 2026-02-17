@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.scoreHome,.scoreGuest {
+    background: #0a0001;
+    font-size: 90px;
+    color: #F94F6D;
+    width: 120px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    padding: 20px 0;
+}
+
+button {
+    background: none;
+    color: #9AABD8;
+    border-color: #9AABD8;
+}
+
+
+
