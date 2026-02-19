@@ -1,0 +1,72 @@
+body {
+  background-color: #1C1C1C; 
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  font-family: "Karla", system-ui, sans-serif;
+}
+.card-one,
+.card-two {
+  background-color: #1f2937;
+  color: white;
+  flex: 1 1 320px;
+  max-width: 550px;
+  height: auto;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 20px 20px;
+}
+h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+p.description {
+  margin: 0;
+  font-weight: 400;
+  color: rgb(141, 140, 140);
+}
+h2 .accent {
+  color: #4adf86;
+}
+#genPwd1,
+#genPwd2 {
+  margin-top: 40px;
+  border: none;
+  background-color: #10b981;
+  width: 130px;
+  height: 32px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+hr {
+  margin: 2.1rem 0 1.25rem;
+  border: none;
+  background-color: #2f3e53;
+  height: 2px;
+}
+.pw-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 200px));
+  gap: 1rem;
+ justify-content: start;
+}
+.pw-box {
+  height: 32px;
+  border-radius: 5px;
+  background-color: #273549;
+  width: 100%;
+  color: #4adf86;
+  text-align: center;
+  align-content: center;
+  font-size: clamp(4px, 5vw, 10px);
+  font-weight: 600;
+}
