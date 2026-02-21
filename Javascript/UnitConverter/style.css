@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+h1,
+input {
+  color: white;
+}
+h2 {
+  color: #5a537b;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  margin: 1rem 0 0.4rem;
+}
+
+.InitialData {
+  background: #6943ff;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  padding: clamp(1.5rem, 4vw, 3rem) 1rem;
+}
+
+.InitialData > .wrap {
+  width: min(90vw, 720px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+h1 {
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+}
+
+input {
+  background: transparent;
+  border: clamp(2px, 0.35vw, 3px) solid #b295ff;
+  border-radius: 6px;
+  width: clamp(6rem, 18vw, 10rem);
+  aspect-ratio: 2/ 1;
+  padding: 0 0.6em;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  text-align: center;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(178, 149, 255, 0.6);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+button {
+  background: white;
+  color: #747474;
+  border: none;
+  border-radius: 6px;
+
+  padding: 0.65em 1.2em;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(1px);
+}
+
+.OutputData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  text-align: center;
+  gap: 10px;
+  padding: clamp(1.25rem, 4vw, 2.5rem) clamp(1rem, 5vw, 3rem);
+}
+#boxLength,
+#boxVolume,
+#boxMass {
+  background: white;
+  width: 100%;
+  max-width: 900;
+  min-height: 110px;
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: 0.6rem;
+}
+p {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+}
